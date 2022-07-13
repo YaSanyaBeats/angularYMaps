@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(private changeDetection: ChangeDetectorRef){
+
+  }
+
+  public marks = '';
+
+  public updateMarks(event: any){
+    this.marks = JSON.stringify(event);
+    console.log(this.marks);
+  }
+
   title = 'semeteryNavigator';
 }

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+app-root{
+    background: -webkit-linear-gradient(90deg, #131111,#43225e);background: linear-gradient(90deg, #131111,#43225e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}

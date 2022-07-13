@@ -1,0 +1,35 @@
+ul{
+    list-style: none;
+    margin-bottom: 30px;
+    & li{
+        margin: 10px 0;
+        & span:first-child{
+            margin-right: 10px;
+        }
+    }
+}
+
+label{
+    margin: 20px 0;
+    & input{
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid white;
+        padding: 10px 15px;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+button{
+    border-radius: 20px;
+    padding: 20px;
+    transition: .3s;
+    background-color: #643488;
+    border: none;
+    &:hover{
+        transform: translateY(-5px);
+        background-color: #8948BB;
+    }
+}

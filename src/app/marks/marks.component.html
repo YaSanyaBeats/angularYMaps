@@ -1,0 +1,19 @@
+<ul class="marks">
+    <li *ngFor="let mark of marks" class="mark">
+        <span>{{mark.title}}</span>
+        <span>{{mark.position[0] + ' - ' + mark.position[1]}}</span>
+    </li>
+</ul>
+<label>
+    <span>Название</span><br>
+    <input type="text" #title>
+</label>
+<label>
+    <span>Координата 1</span><br>
+    <input type="text" #coor1>
+</label>
+<label>
+    <span>Координата 2</span><br>
+    <input type="text" #coor2>
+</label>
+<button (click)="addMark(title.value, coor1.value, coor2.value)">Добавить метку</button>
